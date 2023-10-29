@@ -1,65 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio </title>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            margin: 0;
-            padding: 0;
-        }
+        /* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
 
-        .navbar a {
-            float: left;
-            font-size: 16px;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-        .navbar a:hover {
-            background-color: #555;
-        }
+nav ul {
+    background-color: #333;
+    list-style: none;
+    text-align: center;
+}
 
-        .navbar button {
-            float: right;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 14px 16px;
-            margin: 8px;
-            cursor: pointer;
-        }
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
 
-        .navbar button:hover {
-            background-color: #45a049;
-        }
-        .tex{
-            color: aliceblue;
-            text-align: center;
-        }
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
-    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.adorama.com%2Falc%2Fwp-content%2Fuploads%2F2018%2F11%2Flandscape-photography-tips-yosemite-valley-feature.jpg&tbnid=DfIwe9mTRd2gxM&vet=12ahUKEwi32sqalpiCAxUezaACHQRiB4kQMygAegQIARBu..i&imgrefurl=https%3A%2F%2Fwww.adorama.com%2Falc%2Fbasic-landscape-photography-tips%2F&docid=0civwCR0PxZkaM&w=883&h=498&q=landscape&ved=2ahUKEwi32sqalpiCAxUezaACHQRiB4kQMygAegQIARBu" alt="" />
-    <h1 class="tex">Welcome to my portfolio</h1>
-    <p class="tex">Hello My name is Dev sharma</p>
-    
+    <header>
+        <h1>DEV SHARMA</h1>
+        <p>Web Developer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my portfolio website. I am a web developer with a passion for creating beautiful and functional websites.
+        </p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature-825x465.jpg" alt="Project 1">
+            <H1>Blog App</H1>
+            <p>Project 1 description.</p>
+        </div>
+        <div class="project">
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature-825x465.jpg" alt="Project 2">
+            <p>THis is a blog app created by python django and javascript bootstrap. plese check it out .</p>
+        <a href="https://github.com/Devsharma431/Blog-App">See Project</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at your.email@example.com</p>
+    </section>
+    <footer>
+        <p>&copy; 20XX Your Name</p>
+    </footer>
 </body>
 </html>
